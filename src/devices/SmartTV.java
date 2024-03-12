@@ -1,45 +1,46 @@
-package ProvaDevices;
+package devices;
 
 public class SmartTV extends Device implements DeviceInterface {
 
-    private String Tela;
-    private String AutoFalante;
-    private String BotaoAumentaVolume;
-    private String BotaoAbaixaVolume;
+    private String tela;
+    private String autoFalante;
+    private String botaoAumentaVolume;
+    private String botaoAbaixaVolume;
 
     public String getTela() {
-        return Tela;
+        return tela;
     }
 
     public void setTela(String tela) {
-        Tela = tela;
+        this.tela = tela;
     }
 
     public String getAutoFalante() {
-        return AutoFalante;
+        return autoFalante;
     }
 
     public void setAutoFalante(String autoFalante) {
-        AutoFalante = autoFalante;
+        this.autoFalante = autoFalante;
     }
 
     public String getBotaoAumentaVolume() {
-        return BotaoAumentaVolume;
+        return botaoAumentaVolume;
     }
 
     public void setBotaoAumentaVolume(String botaoAumentaVolume) {
-        BotaoAumentaVolume = botaoAumentaVolume;
+        this.botaoAumentaVolume = botaoAumentaVolume;
     }
 
     public String getBotaoAbaixaVolume() {
-        return BotaoAbaixaVolume;
+        return botaoAbaixaVolume;
     }
 
     public void setBotaoAbaixaVolume(String botaoAbaixaVolume) {
-        BotaoAbaixaVolume = botaoAbaixaVolume;
+        this.botaoAbaixaVolume = botaoAbaixaVolume;
     }
+
     public void performAction() {
-        System.out.println ("Acessando Netflix");
+        System.out.println("Acessando Netflix");
     }
 
 }

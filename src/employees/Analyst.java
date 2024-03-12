@@ -1,7 +1,7 @@
-package Employees;
+package employees;
 
 public class Analyst extends Employee implements EmployeeInterface {
-    private String realizarAnaliseDeDados;
+    private String realizarAnaliseDados;
     private String realizarRelatorio;
     private String realizarApresentacao;
 
@@ -9,12 +9,12 @@ public class Analyst extends Employee implements EmployeeInterface {
         super(nome, cargo);
     }
 
-    public String getRealizarAnaliseDeDados() {
-        return realizarAnaliseDeDados;
+    public String getRealizarAnaliseDados() {
+        return realizarAnaliseDados;
     }
 
-    public void setRealizarAnaliseDeDados(String realizarAnaliseDeDados) {
-        this.realizarAnaliseDeDados = realizarAnaliseDeDados;
+    public void setRealizarAnaliseDados(String realizarAnaliseDados) {
+        this.realizarAnaliseDados = realizarAnaliseDados;
     }
 
     public String getRealizarRelatorio() {
@@ -33,22 +33,12 @@ public class Analyst extends Employee implements EmployeeInterface {
         this.realizarApresentacao = realizarApresentacao;
     }
 
-    @Override
     public void analyzeData() {
         System.out.println("Analisando os dados");
     }
+
     @Override
     public void executeTask() {
-        System.out.println("Implementando dados");
-    }
-
-    @Override
-    public void manageTeam() {
-
-    }
-
-    @Override
-    public void makeDecisions() {
-
+        System.out.println("O verdadeiro peão da obra");
     }
 }

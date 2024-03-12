@@ -1,13 +1,9 @@
 package transportation;
 
-public class Car extends Transportation implements TransportationInterface {
+public class Car extends Vehicle implements TransportationInterface {
     private String transportarFuncionarios;
     private String armazenamentoAlimentos;
     private String armazenamentoRoupas;
-
-    public Car(String nome, String marca, String tipo) {
-        super(nome, marca, tipo);
-    }
 
     public String getTransportarFuncionarios() {
         return transportarFuncionarios;
@@ -34,22 +30,8 @@ public class Car extends Transportation implements TransportationInterface {
     }
 
     @Override
-    public void drive() {
-        System.out.println("Estou indo para o local de carregamento");
-    }
-
-    @Override
     public void travel() {
-        System.out.println("Estou carregando");
+        System.out.println("Viaja pela estrada");
     }
 
-    @Override
-    public void fly() {
-        // Implementação vazia, pois carros não voam
-    }
-
-    @Override
-    public void sail() {
-        // Implementação vazia, pois carros não navegam
-    }
 }

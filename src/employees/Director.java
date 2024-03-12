@@ -1,9 +1,9 @@
-package Employees;
+package employees;
 
-public abstract class Director extends Employee implements EmployeeInterface {
+public class Director extends Employee implements EmployeeInterface {
     private String receberDados;
     private String receberProblemas;
-    private String realizarReuniaoDeAlinhamento;
+    private String realizarReuniaoAlinhamento;
 
     public Director(String nome, String cargo) {
         super(nome, cargo);
@@ -24,28 +24,19 @@ public abstract class Director extends Employee implements EmployeeInterface {
         this.receberProblemas = receberProblemas;
     }
 
-    public String getRealizarReuniaoDeAlinhamento() {
-        return realizarReuniaoDeAlinhamento;
+    public String getRealizarReuniaoAlinhamento() {
+        return realizarReuniaoAlinhamento;
     }
 
-    public void setRealizarReuniaoDeAlinhamento(String realizarReuniaoDeAlinhamento) {
-        this.realizarReuniaoDeAlinhamento = realizarReuniaoDeAlinhamento;
+    public void setRealizarReuniaoAlinhamento(String realizarReuniaoAlinhamento) {
+        this.realizarReuniaoAlinhamento = realizarReuniaoAlinhamento;
     }
-    @Override
     public void makeDecisions() {
         System.out.println("Tomarei decisões estratégicas para a empresa");
     }
+
     @Override
     public void executeTask() {
-        System.out.println("Preciso de uma reunião com a equipe, urgente!");
-    }
-    @Override
-    public void manageTeam() {
-
-    }
-
-    @Override
-    public void analyzeData() {
-
+        System.out.println("Nada, só fica de reuniãozinha");
     }
 }

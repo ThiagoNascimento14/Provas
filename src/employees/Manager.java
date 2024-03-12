@@ -1,9 +1,9 @@
-package Employees;
+package employees;
 
-public abstract class Manager extends Employee implements EmployeeInterface {
+public class Manager extends Employee implements EmployeeInterface {
     private String realizarReuniao;
     private String realizarContratacao;
-    private String realizarControleDePonto;
+    private String realizarControlePonto;
 
     public Manager(String nome, String cargo) {
         super(nome, cargo);
@@ -25,28 +25,19 @@ public abstract class Manager extends Employee implements EmployeeInterface {
         this.realizarContratacao = realizarContratacao;
     }
 
-    public String getRealizarControleDePonto() {
-        return realizarControleDePonto;
+    public String getRealizarControlePonto() {
+        return realizarControlePonto;
     }
 
-    public void setRealizarControleDePonto(String realizarControleDePonto) {
-        this.realizarControleDePonto = realizarControleDePonto;
+    public void setRealizarControlePonto(String realizarControlePonto) {
+        this.realizarControlePonto = realizarControlePonto;
     }
-    @Override
     public void manageTeam() {
         System.out.println("Após reunião, abrirei vagas para contratação");
     }
+
     @Override
     public void executeTask() {
-        System.out.println("Estou em reunião");
-    }
-    @Override
-    public void analyzeData() {
-
-    }
-
-    @Override
-    public void makeDecisions() {
-
+        System.out.println("Estagiário de diretor");
     }
 }

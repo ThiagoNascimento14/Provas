@@ -1,6 +1,6 @@
-package Employees;
+package employees;
 
-public abstract class Employee {
+public class Employee {
     private String nome;
     private String cargo;
 
@@ -25,7 +25,6 @@ public abstract class Employee {
         this.cargo = cargo;
     }
 
-    public abstract void executeTask();
 }
 
 

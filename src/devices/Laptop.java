@@ -1,35 +1,36 @@
-package ProvaDevices;
+package devices;
 
 public class Laptop extends Device implements DeviceInterface {
 
-    private String Teclado;
-    private  String Tela;
-    private String Mouse;
+    private String teclado;
+    private String tela;
+    private String mouse;
 
     public String getTeclado() {
-        return Teclado;
+        return teclado;
     }
 
     public void setTeclado(String teclado) {
-        Teclado = teclado;
+        this.teclado = teclado;
     }
 
     public String getTela() {
-        return Tela;
+        return tela;
     }
 
     public void setTela(String tela) {
-        Tela = tela;
+        this.tela = tela;
     }
 
     public String getMouse() {
-        return Mouse;
+        return mouse;
     }
 
     public void setMouse(String mouse) {
-        Mouse = mouse;
+        this.mouse = mouse;
     }
+
     public void performAction() {
-        System.out.println ("Inicializando Windows");
+        System.out.println("Inicializando Windows");
     }
 }
